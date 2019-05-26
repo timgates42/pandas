@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+
+ADD ci /pandas/ci
+ADD setup.py /pandas/setup.py
+RUN /pandas/ci/setup_main.sh
